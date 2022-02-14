@@ -2,6 +2,7 @@ package com.company;
 
 
 public class AnimesList {
+
     private Anime animesList[] = new Anime[18];
     public AnimesList() {
         setAnimesList();

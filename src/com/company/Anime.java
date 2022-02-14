@@ -37,7 +37,7 @@ public class Anime {
 
     //Perd (malus)
     public int getMarbles() {
-        System.out.println("Marbles !!!!!! : ");
+
         return marbles;
     }
 

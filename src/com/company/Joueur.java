@@ -24,17 +24,18 @@ public class Joueur {
     }
 
     //Gagne 1 bille en plus si une partie est gagnée ! (bonus)
-    private void setMarbles() {
+    public void setMarbles(int bonusGagne) {
 
-        System.out.println("bonus ****** : ");
-        marbles += bonus;
+
+        marbles =marbles+bonus+bonusGagne;
+
     }
 
     //Perd 3 billes en plus si une partie est perdue ! (malus)
     public int getMarbles() {
 
 
-        System.out.println("malus !!!!!! : ");
+
         return marbles -= malus;
     }
 

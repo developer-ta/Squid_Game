@@ -27,16 +27,19 @@ public class GameStart {
 
     //chooseDifficulty
     private void chooseDifficulty(Scanner scanner) {
-        int level;
+        int level=0;
 
         while (true) {
 
             try {
                 System.out.println("""
+                        **************************
                         choisir la deficulté :
                         1. Facile : 4 niveaux
-                        2. Difficile : 12 niveaux
-                        3. Impossible : 18 niveaux""");
+                        2. Difficile : 8 niveaux
+                        3. Impossible : 16 niveaux
+                        ***************************
+                        """);
 
                 System.out.print("taper la numero de defficulté :");
                 int n = scanner.nextInt();
@@ -48,10 +51,13 @@ public class GameStart {
                             difficulty(4);
                             break;
                         case 2:
-                            difficulty(12);
+                            difficulty(8);
+
                             break;
                         case 3:
-                            difficulty(18);
+                            difficulty(8);
+                            difficulty(8);
+
                             break;
                     }
                 } else {
@@ -103,10 +109,11 @@ public class GameStart {
                 System.out.println("""
                         *******************
                         Choisir  Hero :
-                        *******************
                         1.  Seong Gi-hun
                         2. Kang Sae-byeok
-                        3. Cho Sang-woo""");
+                        3. Cho Sang-woo
+                        *******************
+                        """);
 
                 System.out.print("taper la numero de Hero :");
                 int n = scanner.nextInt();
@@ -115,13 +122,13 @@ public class GameStart {
                     heroId = n;
                     switch (heroId) {
                         case 1:
-                            hero = joueur.joueurs[1];
+                            hero = joueur.joueurs[0];
                             break;
                         case 2:
-                            hero = joueur.joueurs[2];
+                            hero = joueur.joueurs[1];
                             break;
                         case 3:
-                            hero = joueur.joueurs[3];
+                            hero = joueur.joueurs[2];
                             break;
                     }
                 } else {

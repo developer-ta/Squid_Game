@@ -8,6 +8,7 @@ public class Main {
         // write your code here
 
         GameStart s = new GameStart();
+        GameFight f=new GameFight(s);
 
 
 
